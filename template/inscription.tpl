@@ -48,13 +48,16 @@ width:400px;
 
 {* On teste si la variable $inscription_reussie existe, celle ci est crée lorsque la requête d'inscription est executée *}
 {if isset($inscription_reussie)}
-	Inscription réussie ! Vous allez être redirigé vers la page d'accueil.
-	
+	<div class="formulaire">
+		Inscription réussie ! Vous allez être redirigé vers la page d'accueil.
+	</div>
 {* On teste si la variable $inscription_echec est égale à "oui", celle ci est crée lorsque la requête d'inscription échoue *}
 {elseif $inscription_echec == "oui"}
-	Inscription échouée. L'adresse mail que vous avez utilisée existe déjà dans notre base de données !
-	</br>
-	Veuillez en choisir une autre et remplir de nouveau le formulaire d'inscription. 
+	<div class="formulaire">
+		Inscription échouée. L'adresse mail que vous avez utilisée existe déjà dans notre base de données !
+		</br>
+		Veuillez en choisir une autre et remplir de nouveau le formulaire d'inscription. 
+	</div>	</br>
 {/if}
 
 {* On teste si la variable $inscription_echec est égale à "oui" ou si la variable $formulaire existe

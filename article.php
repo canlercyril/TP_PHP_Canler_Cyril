@@ -6,10 +6,7 @@ include ('Includes/connexion.inc.php');
 //on inclut la classe Smarty
 require_once("libs/Smarty.class.php"); 
 $smarty = new Smarty();
-?>
 
-
-<?php
 //On teste si l'utilisateur est identifié afin de vérifier qu'il puisse poster un article
 //grâce à la fonction identification présente sur la page fonctions.php et appelée sur la page de connexion
 if (identification()==true)

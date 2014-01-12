@@ -108,13 +108,11 @@ if (identification()==true)
 			//On affiche la page article.tpl
 			$smarty->display("template/article.tpl");
 
-
 		} 
 		else 
 		{
 			//On affiche le formulaire d'ajout d'un nouvel article
 			$smarty->display("template/article.tpl");
-
 		}
 	}
 }

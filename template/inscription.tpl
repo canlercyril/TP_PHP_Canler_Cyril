@@ -6,7 +6,7 @@ function ValiderInscri(formulaire)
 	if (formulaire.mail.value=="" || formulaire.password.value.lenght<1 ) 
 		alert("Un des champs est vide !");
 		
-	//On teste si l'adresse Mail comporte un @  
+	//On teste si ladresse Mail comporte un @  
 	else if (formulaire.mail.value.indexOf("@",0)<0) 
 		alert("L'adresse Mail saisie est incorrecte !");
 	  

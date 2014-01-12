@@ -11,7 +11,7 @@ function identification ()
 		//On affecte une variable au cookie
 		$maVariable=$_COOKIE['sid'];
 		//On execute une requête permettant de compter si un sid dans la bdd correspond à celui récupéré
-		$sql=mysql_query("select count(*) as total FROM utilisateurs where sid='$maVariable'");
+		$sql=mysql_query("select count(*) as total FROM utilisateurs where sid='$maVariable'") or die(mysql_error());
 		//On execute la requête dont on récupère le résultat dans la variable $data
 		$data=mysql_fetch_array($sql);
 		

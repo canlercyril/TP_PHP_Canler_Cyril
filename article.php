@@ -21,10 +21,10 @@ if (identification()==true)
 		$date = date("Y-m-d");
 
 		//On stocke la requête dans une variable $sql_ajouter_article
-		$sql_ajouter_article= "INSERT INTO  `u360651689_php`.`articles` (`titre` ,`texte` ,`date`, `statut`)VALUES ('". $titre ."',  '". $texte ."', '". $date ."','". $option ."');";
+		$sql= "INSERT INTO  `u360651689_php`.`articles` (`titre` ,`texte` ,`date`, `statut`)VALUES ('". $titre ."',  '". $texte ."', '". $date ."','". $option ."');";
 		
 		//On execute la requête et l'on stocke les résultats dans la variable $req
-		$req=mysql_query($sql_ajouter_article);
+		$req_ajouter_article=mysql_query($sql_ajouter_article);
 		
 		//On teste si le rédacteur de l'article a uploadé une image
 		if (!empty($_POST['datafile'])) 

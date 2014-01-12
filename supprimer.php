@@ -14,7 +14,7 @@ $id = $_GET['id'];
 //et le champ arti_id de la table commentaire afin d'effectuer une suppression en cascade lorsque l'id de l'article est supprimé 
 //grâce au moteur de stockage InnoDB
 $SQL = "DELETE FROM articles Where id='$id';";
-$req = mysql_query($SQL);
+$req = mysql_query($SQL) or die(mysql_error());
 
 //On redirige l'utilisateur vers la page index.php
 header('Refresh: 3; url=index.php');

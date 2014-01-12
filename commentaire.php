@@ -62,7 +62,7 @@ else if (isset($_POST['pseudo']))
 	$sql= "INSERT INTO  `u360651689_php`.`commentaires` (`texte` ,`date`,`uti_id`, `arti_id`, `pseudo_com`, `mail`)VALUES ('". $texte ."',  '". $date ."', '1', '". $id ."', '". $pseudo ."', '". $mail ."');";
 
 	//On execute la requête
-	$req3=mysql_query($sql);
+	$req=mysql_query($sql);
 }
 
 //On récupère si elle existe la variable id via la méthode GET

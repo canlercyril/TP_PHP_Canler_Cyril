@@ -41,7 +41,6 @@ if (isset($_POST['texteidentifie']))
 	$sql= "INSERT INTO  `u360651689_php`.`commentaires` (`texte` ,`date`,`uti_id`, `arti_id`)VALUES ('". $texte ."',  '". $date ."', '". $cookie ."', '". $id ."');";
 	//On execute la requête
 	$req=mysql_query($sql);
-	print_r($sql);
 
 }
 

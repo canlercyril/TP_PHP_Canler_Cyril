@@ -31,11 +31,12 @@
 </SCRIPT> 
 
 <style type="text/css">
- {literal}
- .commentaire{
-
+{literal}
+ 
+.commentaire
+{
 clear:both;
- background-color:#E4EFFF;
+background-color:#E4EFFF;
 border:1px solid #9FC6FF;
 padding:5px;
 /*arrondir les coins en haut à gauche et en bas à droite*/
@@ -43,47 +44,45 @@ padding:5px;
 -webkit-border-radius:10px 0;
 border-radius:10px 0;
 margin-bottom:15px;
- }
+}
   
   
-  .image {
-
+.image {
 -moz-border-radius:12px;
 -webkit-border-radius:12px;
 border-radius:15px;
 height :150px;
 width :150px;
 float:right;
-
 }
 
- .commentairetitre{
+.commentairetitre
+{
 clear:both;
- }
+}
 
-
+.titre
+{
+border-bottom:1px dashed blue;
+}
  
- .titre{
-  border-bottom:1px dashed blue;
-  }
- 
- .article{
-
-
- padding-right:5px;
- padding-left:5px;
-  background-color: rgba(255,255,255, 0.5);
+.article{
+padding-right:5px;
+padding-left:5px;
+background-color: rgba(255,255,255, 0.5);
 border:1px solid #9FC6FF;
-
 /*arrondir les coins en haut à gauche et en bas à droite*/
 -moz-border-radius:10px 0;
 -webkit-border-radius:10px 0;
 border-radius:10px 0;
 padding-bottom:5px;
 min-height:250px;
- }
- textarea{ resize:none;}
+}
 
+textarea
+{ 
+resize:none;
+}
 
 {/literal}
 
@@ -125,11 +124,13 @@ min-height:250px;
 		{/if}
 
 
-		{foreach from=$data_tab2 item=data2}<div class="commentaire">
-			Publié par : <b>{$data2['pseudo_uti']}{$data2['pseudo_com']}</b>
-			<p>Le : <b>{$data2['date_fr']} </b></p>
-			<p style = "text-align: justify;">
-			<p>{$data2['texte']}</p></div>
+		{foreach from=$data_tab2 item=data2}
+			<div class="commentaire">
+				Publié par : <b>{$data2['pseudo_uti']}{$data2['pseudo_com']}</b>
+				<p>Le : <b>{$data2['date_fr']} </b></p>
+				<p style = "text-align: justify;">
+				<p>{$data2['texte']}</p>
+			</div>
 		{/foreach}
 
 	</div>

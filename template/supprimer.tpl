@@ -1,7 +1,7 @@
 <style type="text/css">
  {literal}
  
-.formulaire
+.mise_en_page
 {
 	padding-right:5px;
 	padding-left:5px;
@@ -22,7 +22,7 @@
 </style>
 
 {* Affichage lorsque l'article est supprimé *}
-<div class="formulaire">
+<div class="mise_en_page">
 	Article supprimé ! </br>
 	Vous allez être redirigé vers la page d'accueil.
 </div>

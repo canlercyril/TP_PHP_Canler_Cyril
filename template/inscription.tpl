@@ -19,9 +19,10 @@ function ValiderInscri(formulaire)
 <style type="text/css">
  {literal}
  
- .titre{
-  border-bottom:1px dashed blue;
-  }
+.titre
+{
+	border-bottom:1px dashed blue;
+}
  
 .formulaire{
 

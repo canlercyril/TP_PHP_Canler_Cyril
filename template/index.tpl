@@ -13,9 +13,8 @@ function delete()
 
 <style type="text/css">
 
- 
-   .image {
-
+ .image 
+ {
 -moz-border-radius:12px;
 -webkit-border-radius:12px;
 border-radius:15px;
@@ -24,13 +23,16 @@ width :150px;
 float:right;
 margin-bottom:15px;
 }
-  .titre{
-  border-bottom:1px dashed blue;
-  }
- .article{
 
+.titre
+{
+border-bottom:1px dashed blue;
+}
+ 
+.article
+{
 clear:both;
-  background-color: rgba(255,255,255, 0.5);
+background-color: rgba(255,255,255, 0.5);
 border:1px solid #9FC6FF;
 padding:5px;
 /*arrondir les coins en haut à gauche et en bas à droite*/
@@ -39,7 +41,7 @@ padding:5px;
 border-radius:10px 0;
 margin-bottom:15px;
 min-height:250px;
- }
+}
 
 </style>
 

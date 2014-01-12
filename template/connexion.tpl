@@ -7,18 +7,17 @@
 </SCRIPT> 
 
 <style type="text/css">
- {literal}
+{literal}
  
-  .titre{
-  border-bottom:1px dashed blue;
-  }
+.titre
+{
+border-bottom:1px dashed blue;
+}
   
-.formulaire{
-
-
- padding-right:5px;
- padding-left:5px;
-  background-color: rgba(255,255,255, 0.5);
+.mise_en_page{
+padding-right:5px;
+padding-left:5px;
+background-color: rgba(255,255,255, 0.5);
 border:1px solid #9FC6FF;
 width:400px;
 /*arrondir les coins en haut à gauche et en bas à droite*/
@@ -29,9 +28,7 @@ margin-left:auto;
 margin-right:auto;
 width:400px;
 text-align: center;
- }
- textarea{ resize:none;}
-
+}
 
 {/literal}
 </style>
@@ -39,7 +36,7 @@ text-align: center;
 {* On teste si la variable $deconnexion existe, variable généré sur la page connexion.php et indiquant que l'utilisateur souhaite se déconnecter *}
 {if isset($deconnexion)}
 	{* On affiche le succès de la deconnexion *}
-	<div class="formulaire">
+	<div class="mise_en_page">
 	Déconnexion réussie !</br>
 	Vous allez être redirigé vers la page d'accueil.
 	</div>
@@ -48,14 +45,14 @@ text-align: center;
 {* On teste si la variable $connexion_reussie existe, variable générée sur la pagge connexion.php
 Cette variable est générée si la requête de connexion est executée *}
 {if isset($connexion_reussie)}
-	<div class="formulaire">
+	<div class="mise_en_page">
 	Connexion réussie ! </br>
 	Vous allez être redirigé vers la page d'accueil.
 	</div>
 
 {* On teste si l'on récupère la variable $connexion_echec qui est générée en cas d'échec de l'authentification sur la page connexion.php *}	
 {elseif $connexion_echec == "oui"}
-	<div class="formulaire">
+	<div class="mise_en_page">
 	Connexion échouée. Identifiant ou mot de passe incorrect !</br>
 	Veuillez réessayer. 
 	</div>
@@ -71,7 +68,7 @@ La seconde est crée en cas d'échec de l'authentification *}
 	
 	{* Dans le cas contraire, on affiche le formulaire de connexion *}
 	{else}
-		<div class="formulaire">
+		<div class="mise_en_page">
 			<div class="titre">
 				<h2> Formulaire de connexion </h2>
 			</div>

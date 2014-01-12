@@ -62,7 +62,7 @@ Celle-ci permet d'afficher le formulaire de modification d'un article dans le ca
 			<div class="clearfix">
 				<label for="text">Texte</label>
 					<div class="impact">
-					<textarea name="texte" id="texte">{$dataForm['texte']}</textarea>
+					<textarea style="FONT-SIZE: 12pt; WIDTH: 450px;  FONT-FAMILY: Verdana" rows="10" name="texte" id="texte">{$dataForm['texte']}</textarea>
 				</div>
 			</div>
 			
